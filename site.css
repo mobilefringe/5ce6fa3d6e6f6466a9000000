@@ -407,6 +407,7 @@ strong {
             width: 30px;
             height: 30px;
             position: relative;
+            border: 1px solid #FFF;
             background: $primary; 
             border-radius: 50%;
             transition: all 0.3s ease;
