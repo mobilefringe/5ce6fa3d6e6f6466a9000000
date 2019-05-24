@@ -64,7 +64,8 @@
                     'findBlogByName'
                 ]),
                 postList() {
-                    var blog = this.findBlogByName("Main Blog")
+                    var blog = this.findBlogByName("Main Blog");
+                    console.log("nlog" blog)
                     if (blog.posts) {
                         var vm = this;
                         var temp_blog = [];
