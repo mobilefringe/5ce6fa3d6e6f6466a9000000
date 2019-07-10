@@ -48,18 +48,14 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "json!site.json", "vue!vue_facebook"], function (Vue, Vuex, moment, tz, VueMoment, site, vueFacebookPage) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "json!site.json", "vue!vue_facebook", "campaignMonitor"], function (Vue, Vuex, moment, tz, VueMoment, site, vueFacebookPage, campaignMonitor) {
         return Vue.component("footer-component", {
             template: template, // the variable template will be injected,
             data: function data() {
                 return {
                     dataLoaded: false,
-                    siteInfo: site,
-                    newsletter_email: ""
+                    siteInfo: site
                 }
-            },
-            mounted () {
-                window.MktoForms2.loadForm("//app-sj03.marketo.com", "561-LJY-710", 3296);
             },
             created () {
                 this.dataLoaded = true;
@@ -67,21 +63,13 @@
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'timezone',
-                    'findRepoByName'
+                    'timezone'
                 ]),
                 copyright_year() {
                     return moment().year();
                 },
                 getPropertyAddress() {
                     return this.property.address1 + ' ' + this.property.city + ' ' + this.property.country + ' ' + this.property.province_state
-                }
-            },
-            methods: {
-                newsletterRoute() {
-                    this.show_menu = false;
-                    this.$router.push("/newsletter?email=" + this.newsletter_email);
-                    this.newsletter_email = "";
                 }
             }
         });
