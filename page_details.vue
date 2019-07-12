@@ -15,6 +15,7 @@
                         </div>
                         <div class="details_col_9">
                             <div class="page_body" v-if="currentPage" v-html="currentPage.body"></div>
+                            <iframe v-if="isThankYou" src="https://giphy.com/embed/3oEdva9BUHPIs2SkGk" width="240" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -34,7 +35,8 @@
                     dataLoaded: false,
                     pageBanner: null,
                     pageName: "Default",
-                    currentPage: {}
+                    currentPage: {},
+                    isThankYou: false
                 }
             },
             created() {
@@ -71,6 +73,13 @@
                             route_url = this.property.slug + "-terms-of-use"
                         } else {
                             route_url = this.id;
+                        }
+                        
+                        
+                        if (_.includes(this.$route.path, "thank-you")) {
+                            this.isThankYou = true;
+                        } else {
+                            this.isThankYou = false;
                         }
                         
                         var _this = this;
