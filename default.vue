@@ -7,7 +7,6 @@
 
 <script>
     define(["Vue", "vuex", "vue-meta"], function(Vue, Vuex, Meta) {
-        Vue.use(Meta);
         return Vue.component("default-component", {
             template: template, // the variable template will be injected
             data: function() {
