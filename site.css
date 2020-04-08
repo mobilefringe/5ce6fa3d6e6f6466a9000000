@@ -828,6 +828,7 @@ footer {
     .slick-dots {
         margin: 0;
         padding: 0;
+        width: 100%;
         display: block;
         position: absolute;
         bottom: 50px;
@@ -837,6 +838,7 @@ footer {
         line-height: 0;
         cursor: pointer;
         z-index: 99;
+        text-align: center;
         li {
             padding: 0 5px;
             display: inline-block;
