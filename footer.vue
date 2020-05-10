@@ -9,16 +9,19 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 footer_newsletter">
                     <p class="footer_heading">NEWSLETTER SUBSCRIPTION</p>
                     <p>Stay up to date on the latest news from {{ property.name }}!</p>
-
+                    <!--<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A3C25BE56C9EEEFE4E27CCDA1D050453FE7CBAD4622401A9A5A7258B2B5573CDB1DC73878DF91D0C258DA234CF16170A4">	-->
+                    <!--    <label class="accessibility" for="fieldEmail">Email</label>-->
+                    <!--    <input id="fieldEmail" name="cm-yddyhtl-yddyhtl" type="email" class="js-cm-email-input" placeholder="Your Email" required />-->
+                    <!--    <button id="newsletter_submit" class="js-cm-submit-button" type="submit">Subscribe To Our Newsletter</button>-->
+                    <!--</form>-->
                     
-                    <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A3C25BE56C9EEEFE4E27CCDA1D050453FE7CBAD4622401A9A5A7258B2B5573CDB1DC73878DF91D0C258DA234CF16170A4">
-                        <label class="accessibility" for="fieldEmail">Email </label>
-                        <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-yddyhyr-yddyhyr" required="" type="email">
+                    
+                   <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A3C25BE56C9EEEFE4E27CCDA1D050453FE7CBAD4622401A9A5A7258B2B5573CDB1DC73878DF91D0C258DA234CF16170A4">
+                        <label>Email </label>
+                        <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-yddyhtl-yddyhtl" required="" type="email">
                         <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
                         <button id="newsletter_submit" class="js-cm-submit-button" type="submit">Subscribe To Our Newsletter</button>
-                    </form>
-                    
-                    
+                   </form>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <p class="footer_heading">FOLLOW US ON FACEBOOK</p>
